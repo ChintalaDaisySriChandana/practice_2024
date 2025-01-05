@@ -77,7 +77,7 @@ pipeline {
         stage ('Wait for 15 seconds') {
             steps {
                 echo 'Waiting for 15 seconds'
-                sleep(time: 15, units: 'SECONDS')
+                sleep(time: 15, unit: 'SECONDS')
             }
         }
 
