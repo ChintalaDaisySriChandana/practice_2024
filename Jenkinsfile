@@ -92,7 +92,7 @@ pipeline {
         post {
             always {
                 echo 'Cleaning up'
-                sh 'pkill -f "mvn spring-boot:run || true"
+                sh 'pkill -f "mvn spring-boot:run" || true'
             }
         }
 	}
