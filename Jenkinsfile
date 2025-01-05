@@ -66,7 +66,7 @@ pipeline {
 					if (response == "200") {
 					echo 'The app is running successfully'
 					} else {
-					echo "The app failed to start. HTTP response code = $(response)"
+					echo "The app failed to start. HTTP response code: ${response}"
 					currentBuild.result = 'FAILURE'
 	                error ("The app did not start correctly")
                 }
