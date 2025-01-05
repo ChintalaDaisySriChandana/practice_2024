@@ -40,7 +40,7 @@ pipeline {
 		stage ('Upload Artifact') {
 		    steps {
 			    echo 'Uploading Artifact'
-				archiveArtifacts artifacts: 'target/petclinic-0.0.1-SNAPSHOT.jar', allowEmptyArchieve: true
+				archiveArtifacts artifacts: 'target/petclinic-0.0.1-SNAPSHOT.jar', allowEmptyArchive: true
 			}
 		}
 		
